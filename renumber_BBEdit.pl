@@ -1,6 +1,7 @@
 #!/usr/bin/perl                                                                
 
 # Script to renumber footnotes in Markdown file sequentially, separately renumbering the footnote references if they are preceded by a second-level header (##) followed by the word References, Notes, Footnotes, or Endnotes.   
+# Copy to BBEdit's Text Filters folder 
 
 my $footnote=1;
 
