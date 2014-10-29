@@ -5,11 +5,8 @@ use strict;
 # Only works where footnotes are [^xxxx] and references are [^xxxx]: (where xxx can be any alphanumeric sequence up to 10 characters.
 # Changes the $/ variable to "[" to match each beginning of a footnote.
 # Includes an option to check that the footnotes match the footnote references: type "-c" after the program name when running it in the shell.
-# v.5 replaced the code's fileglobs to variables.
-# v.6 Updated to change both footnotes and footnote references at the same time.
-# v.7 Changed the flag to "-c" and changed the max number of characters in a footnote ref. to 10.
 
-print "Enter the name of the multimarkdown file for fixing footnote numbers. Renumbered file will be saved as renumbered.md.\n";
+print "Enter the name of the markdown file for fixing footnote numbers. Renumbered file will be saved as renumbered.md.\n";
 
 chomp (my $filename = <STDIN>);
 open my $input_file,'<', $filename or die $!;
