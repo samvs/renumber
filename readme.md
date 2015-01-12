@@ -12,3 +12,5 @@ It includes an option to check that the footnotes and the footnote references ar
 The output file with renumbered footnotes and footnote references is given the filename "renumbered.md"
 
 A short version of the script intended to be used within BBEdit as a text filter is also included: *renumber_BBEdit.pl*.
+
+I have also included here a brief script to renumber sequentially the *n* attribute of *MsDescription* elements in a TEI file. I use this with the TEI p4 catalogue files in the IDPcatalogue repository. For p5, the element should be *MsDesc*.
